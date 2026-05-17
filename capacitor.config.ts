@@ -15,6 +15,15 @@ const config: CapacitorConfig = {
       style: 'DARK',
       backgroundColor: '#FFFFFF',
     },
+    SplashScreen: {
+      launchShowDuration: 1500,   // disparaît après 1.5s
+      launchAutoHide: true,
+      backgroundColor: '#0F1923', // fond sombre = couleur du logo
+      androidSplashResourceName: 'splash',
+      showSpinner: false,
+      splashFullScreen: true,
+      splashImmersive: true,
+    },
   },
 };
 
