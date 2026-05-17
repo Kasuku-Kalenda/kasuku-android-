@@ -17,6 +17,7 @@ android/captures/
 # Keystore (ne jamais committer les clés de signature)
 *.jks
 *.keystore
+android/keystore.properties
 
 # Google Services (contient des clés API)
 android/app/google-services.json
