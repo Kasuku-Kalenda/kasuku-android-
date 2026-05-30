@@ -4,9 +4,12 @@
   "description": "Kasuku — App Android (Capacitor wrapper)",
   "scripts": {
     "sync": "cd ../kasuku-cultural-calendar-170426 && VITE_API_URL=https://kasuku.afrikia.org/api/v1 npm run build && cd ../kasuku-android && npx cap sync android",
+    "sync:dev": "CAPACITOR_DEV=true npx cap sync android",
+    "sync:prod": "cd ../kasuku-cultural-calendar-170426 && VITE_API_URL=https://kasuku.afrikia.org/api/v1 npm run build && cd ../kasuku-android && npx cap sync android",
     "open": "npx cap open android",
     "run": "npx cap run android",
-    "android": "npm run sync && npm run open"
+    "android": "npm run sync:prod && npm run open",
+    "android:dev": "npm run sync:dev && npm run open"
   },
   "license": "ISC",
   "dependencies": {
